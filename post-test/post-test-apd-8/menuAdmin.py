@@ -1,9 +1,10 @@
 import inquirer
-from fiturUtama import tambah_insiden, lihat_insiden, ubah_status_insiden, statistik_insiden, filter_insiden, hapus_insiden, lihat_pengguna, clear
+import os
+from NIM_2509106042_DiftyaAzzahra_PT_8 import tambah_insiden, lihat_insiden, ubah_status_insiden, statistik_insiden, filter_insiden, hapus_insiden, lihat_pengguna
 
 def menu_admin(username_login, role):
     while True:
-        clear()
+        os.system('cls')
         pertanyaan = [
             inquirer.List(
                 'menu',
@@ -22,24 +23,31 @@ def menu_admin(username_login, role):
         ]
         jawaban = inquirer.prompt(pertanyaan)
         pilih = int(jawaban['menu'].split('.')[0])
-        clear()
+        os.system('cls')
 
         if pilih == 1:
+            os.system('cls')
             tambah_insiden(username_login)
         elif pilih == 2:
+            os.system('cls')
             lihat_insiden(username_login, role)
         elif pilih == 3:
+            os.system('cls')
             ubah_status_insiden(username_login, role)
         elif pilih == 4:
+            os.system('cls')
             statistik_insiden()
         elif pilih == 5:
+            os.system('cls')
             filter_insiden(username_login, role)
         elif pilih == 6:
+            os.system('cls')
             hapus_insiden()
         elif pilih == 7:
+            os.system('cls')
             lihat_pengguna()
         elif pilih == 8:
+            os.system('cls')
             print("Logout berhasil.")
-            input("Tekan Enter untuk melanjutkan")
-            clear()
+            input("Tekan Enter untuk lanjut...")
             break
