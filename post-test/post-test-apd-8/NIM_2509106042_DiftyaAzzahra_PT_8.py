@@ -25,7 +25,7 @@ def keluar_program(nama_program):
 def tambah_insiden(username_login):
     global insiden
     clear()
-    print("======== TAMBAH INSIDEN ========")
+    print("=============== TAMBAH INSIDEN ===============")
     judul = input("Judul insiden: ")
     tingkat = input("Tingkat keparahan: ")
     status = "open"
@@ -45,7 +45,7 @@ def tambah_insiden(username_login):
 
 def lihat_insiden(username_login, role):
     clear()
-    print("======== LIHAT INSIDEN ========")
+    print("======================================== LIHAT INSIDEN ========================================")
     if len(insiden) == 0:
         print("Belum ada insiden tercatat.")
     else:
@@ -72,7 +72,7 @@ def lihat_insiden(username_login, role):
 def ubah_status_insiden(username_login, role):
     global insiden
     clear()
-    print("======== UBAH STATUS INSIDEN ========")
+    print("============= UBAH STATUS INSIDEN =============")
 
     while True:
         try:
@@ -115,7 +115,7 @@ def ubah_status_insiden(username_login, role):
 
 def filter_insiden(username_login, role):
     clear()
-    print("======== FILTER INSIDEN ========")
+    print("============= FILTER INSIDEN =============")
     tampil_daftar_status()
     while True:
         try:
@@ -152,7 +152,7 @@ def filter_insiden(username_login, role):
 def hapus_insiden():
     global insiden
     clear()
-    print("======== HAPUS INSIDEN ========")
+    print("============= HAPUS INSIDEN =============")
     if len(insiden) == 0:
         print("Tidak ada insiden untuk dihapus.")
         input("Tekan Enter untuk melanjutkan program")
@@ -188,7 +188,7 @@ def hapus_insiden():
 
 def lihat_pengguna():
     clear()
-    print("======== DAFTAR PENGGUNA ========")
+    print("================ DAFTAR PENGGUNA =================")
     if len(pengguna) == 0:
         print("Belum ada pengguna terdaftar.")
     else:
@@ -206,7 +206,7 @@ def jumlah_insiden(data_list):
 
 def statistik_insiden():
     clear()
-    print("======== STATISTIK INSIDEN ========")
+    print("================ STATISTIK INSIDEN =================")
     if len(insiden) == 0:
         print("Belum ada insiden tercatat.")
     else:

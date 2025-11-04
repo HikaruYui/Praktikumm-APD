@@ -4,7 +4,7 @@ from NIM_2509106042_DiftyaAzzahra_PT_8 import pengguna, keluar_program
 admin = ("diftya", "042")
 
 def login_menu():
-    print("======== LOGIN ========")
+    print("========= LOGIN ==========")
     username = input("Username: ")
     password = input("Password: ")
 
@@ -24,7 +24,7 @@ def login_menu():
     return False, "", ""
 
 def register_menu():
-    print("======= REGISTER ========")
+    print("============== REGISTER ===============")
     username = input("Masukkan username anda: ")
     password = input("Masukkan password: ")
 
